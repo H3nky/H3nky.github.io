@@ -6,6 +6,7 @@ import { Container } from 'react-bootstrap';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
+import Video from './Video/Video'
 
 const styles = {
   iconStyle: {
@@ -19,7 +20,7 @@ const styles = {
   },
 };
 
-function Skills(props) {
+function Videos(props) {
   const { header } = props;
   const [data, setData] = useState(null);
 
@@ -30,7 +31,7 @@ function Skills(props) {
   );
 
   useEffect(() => {
-    fetch(endpoints.skills, {
+    fetch(endpoints.videos, {
       method: 'GET',
     })
       .then((res) => res.json())
@@ -40,28 +41,11 @@ function Skills(props) {
 
   return (
     <>
-      <Header title={header} />
       {data? (
         <Fade>
           <div className="section-content-container">
             <Container>
-              {renderSkillsIntro(data.intro)}
-              {data.skills?.map((rows) => (
-                <div key={rows.title}>
-                  <br />
-                  <h3>{rows.title}</h3>
-                  {rows.items.map((item) => (
-                    <div key={item.title} style={{ display: 'inline-block' }}>
-                      <img
-                        style={styles.iconStyle}
-                        src={item.icon}
-                        alt={item.title}
-                      />
-                      <p>{item.title}</p>
-                    </div>
-                  ))}
-                </div>
-              ))}
+              {data.entries?.map((video => <Video video={video}/>))}
             </Container>
           </div>
         </Fade>
@@ -70,8 +54,8 @@ function Skills(props) {
   );
 }
 
-Skills.propTypes = {
+Videos.propTypes = {
   header: PropTypes.string.isRequired,
 };
 
-export default Skills;
+export default Videos;

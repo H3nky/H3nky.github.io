@@ -11,6 +11,11 @@
             "headerTitle": "Skills"
         },
         {
+            "component": "Videos",
+            "path": "/videos",
+            "headerTitle": "Videos"
+        },
+        {
             "component": "Education",
             "path": "/education",
             "headerTitle": "Education"

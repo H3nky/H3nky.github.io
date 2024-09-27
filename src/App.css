@@ -18,7 +18,6 @@
   font-size: 1em;
   cursor: pointer;
   text-decoration: none;
-  letter-spacing: .1em;
   text-indent: .3em;
   border-bottom: 3px solid transparent;
 }
@@ -113,7 +112,6 @@ section.timeline-card-content div.card-description > p {
     margin-right: 0.4em;
     font-size: 0.9em;
     cursor: pointer;
-    letter-spacing: .1em;
     text-indent: .2em;
   }
 }
@@ -145,6 +143,7 @@ section.timeline-card-content div.card-description > p {
 .header {
   font-size: 3em;
   font-weight: bold;
+  margin-top: 1em;
   margin-bottom: 25px;
 }
 
