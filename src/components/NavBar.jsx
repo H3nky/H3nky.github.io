@@ -54,9 +54,10 @@ const NavBar = () => {
     <Navbar
       fixed="top"
       expand="md"
-      bg="dark"
       variant="dark"
-      className="navbar-custom"
+      style={{
+        backgroundColor: theme.navbarTheme.backgroundColor,
+      }}
       expanded={expanded}
     >
       <Container>

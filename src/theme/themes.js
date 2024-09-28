@@ -12,6 +12,7 @@ export const lightTheme = {
   cardFooterBackground: '#f7f7f7',
   cardBorderColor: '#00000020',
   navbarTheme: {
+    backgroundColor: '#8E3B46',
     linkColor: '#dedede',
     linkHoverColor: '#fefefe',
     linkActiveColor: '#fefefe',
@@ -35,6 +36,7 @@ export const darkTheme = {
   cardFooterBackground: '#181818',
   cardBorderColor: '#ffffff20',
   navbarTheme: {
+    backgroundColor: '#B43E8F',
     linkColor: '#dedede',
     linkHoverColor: '#fefefe',
     linkActiveColor: '#fefefe',

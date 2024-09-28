@@ -12,7 +12,7 @@ export default function Video(props) {
       <div className="video--parent">
        <h1 className="video--title">'{video.title}'</h1>
        <div className="videoContainer">
-          <ReactPlayer controls className="video" url={video.url}/>
+          <ReactPlayer light controls className="video" url={video.url}/>
         </div>
       </div>
     );

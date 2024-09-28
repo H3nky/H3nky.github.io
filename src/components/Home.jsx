@@ -33,7 +33,9 @@ function Home() {
       .catch((err) => err);
   }, []);
 
-  return data ? (
+  return (
+    <>
+    {data ? (
     <Fade>
       <div style={styles.mainContainer}>
         <h1 style={styles.nameStyle}>{data?.name}</h1>
@@ -50,7 +52,10 @@ function Home() {
         <Social />
       </div>
     </Fade>
-  ) : <FallbackSpinner />;
+  ) : <FallbackSpinner />}
+
+  </>
+  );
 }
 
 export default Home;
