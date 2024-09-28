@@ -44,17 +44,17 @@ function Education(props) {
       <Header title={header} />
       {data ? (
         <Fade>
-          <div style={{ width }} className="section-content-container">
+          <div style={{width}} className="section-content-container">
             <Container>
               <Chrono
                 hideControls
-                allowDynamicUpdate
+                allowDynamicUpdate={true}
                 useReadMore={false}
                 items={data.education}
                 cardHeight={250}
                 mode={mode}
                 theme={{
-                  primary: theme.accentColor,
+                  primary: theme.secondaryColor,
                   secondary: theme.accentColor,
                   cardBgColor: theme.chronoTheme.cardBgColor,
                   cardForeColor: theme.chronoTheme.cardForeColor,

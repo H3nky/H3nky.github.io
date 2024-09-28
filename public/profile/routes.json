@@ -1,24 +1,9 @@
 {
     "sections": [
         {
-            "component": "About",
-            "path": "/about",
-            "headerTitle": "About"
-        },
-        {
-            "component": "Skills",
-            "path": "/skills",
-            "headerTitle": "Skills"
-        },
-        {
             "component": "Videos",
             "path": "/videos",
             "headerTitle": "Videos"
-        },
-        {
-            "component": "Education",
-            "path": "/education",
-            "headerTitle": "Education"
         },
         {
             "component": "Experience",

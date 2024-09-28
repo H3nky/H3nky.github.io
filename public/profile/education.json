@@ -1,19 +1,18 @@
 {
     "education":[
         {
-            "title": "Jun 20XX - Jun 20YY",
-            "cardTitle": "B.Tech, Computer Science",
-            "cardSubtitle":"XYZ University, City",
-            "cardDetailedText": "CGPA - 9.5",
+            "title": "Aug 2023 - Jun 2027",
+            "cardTitle": "University of California, Berkeley",
+            "cardSubtitle":"Political Science, Computer Science",
+            "cardDetailedText": "GPA - 3.957",
             "icon" : {
                 "src": "images/education/berkeley.png"
             }
         },
         {
-            "title": "Apr 20XX",
-            "cardTitle": "High School",
-            "cardSubtitle":"ABC School, City",
-            "cardDetailedText": "Marks - 95%"
+            "title": "Jun 2023",
+            "cardTitle": "Verdugo Hills High School",
+            "cardDetailedText": "GPA - 4.41"
         }
     ]
 }

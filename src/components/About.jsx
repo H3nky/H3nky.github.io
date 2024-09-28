@@ -22,11 +22,15 @@ const styles = {
     alignItems: 'center',
     display: 'flex',
   },
+  picture: {
+    width: '40vh'
+  }
 };
 
 function About(props) {
   const { header } = props;
   const [data, setData] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const parseIntro = (text) => (
     <ReactMarkdown
@@ -43,6 +47,12 @@ function About(props) {
       .catch((err) => err);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <>
       <Header title={header} />
@@ -55,9 +65,10 @@ function About(props) {
                   <Col style={styles.introTextContainer}>
                     {parseIntro(data.about)}
                   </Col>
+                  {windowWidth > 1000 && 
                   <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
-                  </Col>
+                    <img style={styles.picture} src={data?.imageSource} alt="profile"/>
+                  </Col>}
                 </Row>
               </Fade>
             )

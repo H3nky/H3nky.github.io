@@ -52,11 +52,13 @@ const NavBar = () => {
 
   return (
     <Navbar
+      className="justify-content-center"
       fixed="top"
       expand="md"
       variant="dark"
       style={{
         backgroundColor: theme.navbarTheme.backgroundColor,
+        transition: 'all 0.50s linear' 
       }}
       expanded={expanded}
     >
@@ -80,8 +82,8 @@ const NavBar = () => {
           onClick={() => setExpanded(!expanded)}
         />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto" />
-          <Nav>
+
+          <Nav className="mx-auto">
             {data
               && data.sections?.map((section, index) => (section?.type === 'link' ? (
                 <ExternalNavLink

@@ -6,24 +6,8 @@
     },
     "sections": [
         {
-            "title": "Home",
-            "href": "/"
-        },
-        {
-            "title": "About",
-            "href": "/about"
-        },
-        {
-            "title": "Skills",
-            "href": "/skills"
-        },
-        {
             "title": "Videos",
             "href": "/Videos"
-        },
-        {
-            "title": "Education",
-            "href": "/education"
         },
         {
             "title": "Experience",

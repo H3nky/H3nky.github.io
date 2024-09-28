@@ -1,14 +1,15 @@
 export const lightTheme = {
-  background: '#ffffff',
+  background: '#F5E0B7',
   color: '#8E3B46',
-  accentColor: '#8E3B46',
+  secondaryColor: '#FE5D26',
+  accentColor: '#F5E0B7',
   chronoTheme: {
-    cardBgColor: 'white',
-    cardForeColor: 'black',
+    cardBgColor: '#8E3B46',
+    cardForeColor: 'white',
     titleColor: 'white',
   },
   timelineLineColor: '#ccc',
-  cardBackground: '#fff',
+  cardBackground: '#8E3B46',
   cardFooterBackground: '#f7f7f7',
   cardBorderColor: '#00000020',
   navbarTheme: {
@@ -23,8 +24,8 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  background: '#121212',
-  color: '#eee',
+  background: '#212121',
+  color: '#ffffff',
   accentColor: '#3D84C6',
   chronoTheme: {
     cardBgColor: '#1B1B1B',
@@ -36,8 +37,8 @@ export const darkTheme = {
   cardFooterBackground: '#181818',
   cardBorderColor: '#ffffff20',
   navbarTheme: {
-    backgroundColor: '#B43E8F',
-    linkColor: '#dedede',
+    backgroundColor: '#38253b',
+    linkColor: '#C8ACD6',
     linkHoverColor: '#fefefe',
     linkActiveColor: '#fefefe',
   },

@@ -1,5 +1,5 @@
 import React from 'react';
-import DarkModeToggle from 'react-dark-mode-toggle';
+import Switch from 'react-switch'
 import PropTypes from 'prop-types';
 import AppContext from '../AppContext';
 
@@ -14,11 +14,19 @@ function ThemeToggler(props) {
     <>
       <AppContext.Consumer>
         {(values) => (
-          <div style={{ marginBottom: 8 }}>
-            <DarkModeToggle
+          <div>
+            <Switch
               onChange={() => handleOnChange(values.darkMode)}
               checked={values.darkMode.value}
-              size={50}
+              height={20}
+              width={40}
+              borderRadius={0}
+              uncheckedIcon={false}
+              checkedIcon={false}
+              offColor='#ffffff'
+              onHandleColor='#fffffff'
+              onColor='#000000'
+              offHandleColor='#0000000'
             />
           </div>
         )}
