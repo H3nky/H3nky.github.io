@@ -1,0 +1,18 @@
+{
+    "education":[
+        {
+            "title": "Aug 2023 - Jun 2027",
+            "cardTitle": "University of California, Berkeley",
+            "cardSubtitle":"Political Science, Computer Science",
+            "cardDetailedText": "GPA - 3.957",
+            "icon" : {
+                "src": "images/education/berkeley.png"
+            }
+        },
+        {
+            "title": "Jun 2023",
+            "cardTitle": "Verdugo Hills High School",
+            "cardDetailedText": "GPA - 4.41"
+        }
+    ]
+}

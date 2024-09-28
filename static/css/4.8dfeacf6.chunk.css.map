@@ -1,0 +1,1 @@
+{"version":3,"sources":["experience.css"],"names":[],"mappings":"AAAA,aACI,cACJ,CAEA,yCACI,YACI,yBACJ,CACJ","file":"4.8dfeacf6.chunk.css","sourcesContent":[".entry .body{\n    margin: 0 0 1em;\n}\n\n@media only screen and (max-width: 768px) {\n    .item-title {\n        margin-top: 10px !important;\n    }\n}\n"]}
